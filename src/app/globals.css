@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #0b192c;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #0066ff;
+    color: #ffffff;
+  }
+}
+
+/* Custom glowing effects and badges */
+.glow-electric {
+  box-shadow: 0 0 25px -5px rgba(0, 102, 255, 0.45);
+}
+
+.glow-subtle {
+  box-shadow: 0 10px 30px -10px rgba(11, 25, 44, 0.12);
+}
+
+.glow-card:hover {
+  box-shadow: 0 20px 40px -15px rgba(0, 102, 255, 0.2);
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 102, 255, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.bg-navy-pattern {
+  background-color: #0b192c;
+  background-image: radial-gradient(rgba(0, 210, 255, 0.15) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(11, 25, 44, 0.08) 1.5px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.03);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}

@@ -1,0 +1,113 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Radial Soft White/Sky -->
+    <radialGradient id="wBgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stopColor="#FFFFFF" />
+      <stop offset="60%" stopColor="#F8FAFC" />
+      <stop offset="100%" stopColor="#E2E8F0" />
+    </radialGradient>
+
+    <!-- Outer Ring Gradient -->
+    <linearGradient id="wRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0066FF" />
+      <stop offset="50%" stopColor="#00D2FF" />
+      <stop offset="100%" stopColor="#0B192C" />
+    </linearGradient>
+
+    <!-- Layer 1: Navy -->
+    <linearGradient id="wLayer1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0B192C" />
+      <stop offset="100%" stopColor="#1E3E62" />
+    </linearGradient>
+
+    <!-- Layer 2: Royal Blue -->
+    <linearGradient id="wLayer2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1D4ED8" />
+      <stop offset="100%" stopColor="#2563EB" />
+    </linearGradient>
+
+    <!-- Layer 3: Electric Blue -->
+    <linearGradient id="wLayer3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0066FF" />
+      <stop offset="100%" stopColor="#00D2FF" />
+    </linearGradient>
+
+    <filter id="wShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" floodColor="#0066FF" floodOpacity="0.25" />
+    </filter>
+
+    <clipPath id="circleClipWhite">
+      <circle cx="540" cy="540" r="540" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#circleClipWhite)">
+    <!-- Base Background -->
+    <rect width="1080" height="1080" fill="url(#wBgGrad)" />
+
+    <!-- Subtle Accent Ambient Light -->
+    <circle cx="540" cy="460" r="300" fill="#0066FF" opacity="0.08" />
+
+    <!-- Outer Profile Ring -->
+    <circle cx="540" cy="540" r="515" stroke="url(#wRing)" stroke-width="12" />
+    <circle cx="540" cy="540" r="490" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="16 12" />
+
+    <!-- Central 3Biru Emblem Mark -->
+    <g transform="translate(540, 420) scale(4.4) translate(-50, -50)" filter="url(#wShadow)">
+      <!-- Layer 1: Navy -->
+      <path
+        d="M 22 18 C 22 14 26 12 29 14 L 68 34 C 71 36 71 40 68 42 L 35 60 C 26 65 14 58 14 48 L 14 28 C 14 22 18 18 22 18 Z"
+        fill="url(#wLayer1)"
+      />
+
+      <!-- Layer 2: Royal Blue -->
+      <path
+        d="M 38 35 C 41 33 45 35 45 38 L 45 68 C 45 78 57 84 66 79 L 78 72 C 82 70 86 73 86 77 L 86 80 C 86 86 79 90 73 87 L 34 68 C 30 66 28 62 28 58 L 28 42 C 28 38 32 35 38 35 Z"
+        fill="url(#wLayer2)"
+        opacity="0.95"
+      />
+
+      <!-- Layer 3: Dynamic Top Electric Wing -->
+      <path
+        d="M 34 26 L 68 42 C 73 44 76 50 74 55 L 68 68 C 66 72 61 74 57 72 L 40 63 C 35 60 32 55 33 50 L 36 34 C 36 30 31 27 28 29 L 26 30 C 23 31 22 28 24 26 L 30 20 C 31 19 33 19 34 26 Z"
+        fill="url(#wLayer3)"
+      />
+
+      <circle cx="28" cy="80" r="4.2" fill="#0B192C" />
+      <circle cx="48" cy="88" r="4.5" fill="#2563EB" />
+      <circle cx="72" cy="50" r="5" fill="#00D2FF" />
+    </g>
+
+    <!-- Typography: 3Biru Brand Name -->
+    <g transform="translate(540, 785)">
+      <text
+        x="0"
+        y="0"
+        text-anchor="middle"
+        font-family="system-ui, -apple-system, sans-serif"
+        font-weight="900"
+        font-size="112"
+        letter-spacing="-2"
+      >
+        <tspan fill="#0066FF">3</tspan>
+        <tspan fill="#0B192C">Biru</tspan>
+      </text>
+
+      <text
+        x="0"
+        y="62"
+        text-anchor="middle"
+        font-family="system-ui, -apple-system, sans-serif"
+        font-weight="800"
+        font-size="28"
+        letter-spacing="14"
+        fill="#64748B"
+      >
+        DIGITAL STUDIO
+      </text>
+    </g>
+
+    <circle cx="540" cy="75" r="5" fill="#0066FF" />
+    <circle cx="540" cy="995" r="5" fill="#0066FF" />
+  </g>
+</svg>
